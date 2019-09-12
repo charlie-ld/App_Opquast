@@ -24,3 +24,6 @@ button {
     border-radius: 5% 5%;
     font-size: 1.5em;
 }
+#home {
+    display: none;
+}

@@ -5,7 +5,6 @@ const description = document.getElementById("description");
 const objectives = document.getElementById("objectives");
 const home = document.getElementById("home");
 const glossaireContainer = document.getElementById('glossaire')
-const bonnesPratiquesContainer = document.getElementById('bonnesPratiques')
 
 // First Button Bonnes Pratiques
 const arrayButton = ["Design",  "Développement", "Projet", "Intégration", "Rédaction", "Prototype"] 
@@ -19,6 +18,9 @@ function addButton()
         button.type="button";
         button.value= arrayButton[i]; // Get the value value from the arrayButton 
         btn.appendChild(button); 
+        document.getElementById("home").style.display = "block"; // Put button home => Click
+        document.getElementById("req").style.display = "none"; // Erase button bonnes pratiques => Click
+        document.getElementById("glo").style.display = "none"; // Erase button glossaire => Click
         button.addEventListener('click', (e) => {
             bonnesPratiques.forEach(function(element) { // Get all elements pratiques.js => by category
                 if (element.phases.includes(e.target.value))
@@ -32,6 +34,9 @@ function addButton()
 
 // Function call Glosaire title & description
  function myFunction () { 
+    document.getElementById("home").style.display = "block"; // Put button home => Click
+    document.getElementById("req").style.display = "none"; // Erase button bonnes pratiques => Click
+    document.getElementById("glo").style.display = "none"; // Erase button glossaire => Click
     glossaire.map(item => { // get ID glossaire index.html
         glossaireContainer.innerHTML += `<div><div><strong>${item.title}</strong></div><br/><div>${item.description}</div></div><br/><br/>`;
         // Get each elements title & description (boucle => array glossaire)
