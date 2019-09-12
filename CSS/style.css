@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin : 5%;
+    text-align: center;
+}
+img {
+    width: 80%;
+    height: auto;
+}
+input {
+    width: 90%;
+    height: 170px;
+    background-color: rgb(49, 196, 76);
+    position: relative;
+    top: 30px;
+    margin-bottom: 50px;
+    border-radius: 5% 5%;
+    font-size: 1.5em;
+}
+button {
+    width: 90%;
+    height: 170px;
+    background-color:rgb(42, 167, 167);
+    border-radius: 5% 5%;
+    font-size: 1.5em;
+}
