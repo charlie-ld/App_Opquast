@@ -9,20 +9,20 @@
     <title>Opquast</title>
 </head>
 <body>
-
-    <img src="./img/logo.jpg" alt="">
+    <img src="./img/logo.png" alt="">
     <h1>La certification des<br/>professionnels<br/>du Web</h1>
-    <button id="home">Home</button>
-    <form name="requeteur">
-        <input id="req" type="button" value="Bonnes Pratiques" onclick="addButton()">
+
+    <a href="index.html">
+        <button id="home"></button>
+    </a>
+    <div id ="requeteur" name="requeteur">
+        <input id="req" value="Bonnes Pratiques" onclick="addButton()">
         <div id="container_array"></div>
-    </form>
+    </div>
 
     <button id="glo" onclick="myFunction()">Glossaire</button>
     <p id="glossaire"></p>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
     <script src="JS/glossaire.js"></script>
     <script src="JS/pratiques.js"></script>
     <script src="JS/main.js"></script>
